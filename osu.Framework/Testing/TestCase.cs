@@ -30,6 +30,21 @@ namespace osu.Framework.Testing
 
         protected virtual ITestCaseTestRunner CreateRunner() => new TestCaseTestRunner();
 
+        protected virtual string TestCaseName
+        {
+            get
+            {
+                const string prefix = "TestCase";
+                var name = GetType().ReadableName();
+
+                // Skip the "TestCase" prefix
+                if (name.StartsWith(prefix))
+                    name = Name.Replace(prefix, string.Empty);
+
+                return name;
+            }
+        }
+
         private GameHost host;
         private Task runTask;
         private ITestCaseTestRunner runner;
@@ -109,11 +124,6 @@ namespace osu.Framework.Testing
         }
 
         /// <summary>
-        /// Most derived usages of this start with TestCase. This will be removed for display purposes.
-        /// </summary>
-        private const string prefix = "TestCase";
-
-        /// <summary>
         /// Tests any steps and assertions in the constructor of this <see cref="TestCase"/>.
         /// This test must run before any other tests, as it relies on <see cref="StepsContainer"/> not being cleared and not having any elements.
         /// </summary>
@@ -124,10 +134,7 @@ namespace osu.Framework.Testing
 
         protected TestCase()
         {
-            Name = GetType().ReadableName();
-
-            // Skip the "TestCase" prefix
-            if (Name.StartsWith(prefix)) Name = Name.Replace(prefix, string.Empty);
+            Name = TestCaseName;
 
             RelativeSizeAxes = Axes.Both;
             Masking = true;
