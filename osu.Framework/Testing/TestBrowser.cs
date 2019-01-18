@@ -33,7 +33,7 @@ namespace osu.Framework.Testing
         public TestCase CurrentTest { get; private set; }
 
         private TextBox searchTextBox;
-        private SearchContainer<TestCaseButton> leftFlowContainer;
+        private SearchContainer<TestCaseButtonGroup> leftFlowContainer;
         private Container testContentContainer;
         private Container compilingNotice;
 
@@ -76,8 +76,14 @@ namespace osu.Framework.Testing
         private void updateList(Assembly asm)
         {
             leftFlowContainer.Clear();
+
+            var testGroup = TestTypes.Where(t => t.Assembly == asm).GroupBy(x => x.GetCustomAttribute<TestGroupAttribute>()?.GroupName ?? "Non-Group Test Case").ToList();
+
             //Add buttons for each TestCase.
-            leftFlowContainer.AddRange(TestTypes.Where(t => t.Assembly == asm).Select(t => new TestCaseButton(t) { Action = () => LoadTest(t) }));
+            leftFlowContainer.AddRange(testGroup.Select(g => new TestCaseButtonGroup(g.Key)
+            {
+                Children = g.Select(t => new TestCaseButton(t) { Action = () => LoadTest(t) }).ToList()
+            }));
         }
 
         internal readonly BindableDouble PlaybackRate = new BindableDouble(1) { MinValue = 0, MaxValue = 2 };
@@ -132,9 +138,9 @@ namespace osu.Framework.Testing
                                 {
                                     OnCommit = delegate
                                     {
-                                        var firstVisible = leftFlowContainer.FirstOrDefault(b => b.IsPresent);
-                                        if (firstVisible != null)
-                                            LoadTest(firstVisible.TestType);
+                                        //var firstVisible = leftFlowContainer.FirstOrDefault(b => b.IsPresent);
+                                        //if (firstVisible != null)
+                                        //    LoadTest(firstVisible.TestType);
                                     },
                                     Height = 20,
                                     RelativeSizeAxes = Axes.X,
@@ -145,7 +151,7 @@ namespace osu.Framework.Testing
                                     Padding = new MarginPadding { Top = 3, Bottom = 20 },
                                     RelativeSizeAxes = Axes.Both,
                                     ScrollbarOverlapsContent = false,
-                                    Child = leftFlowContainer = new SearchContainer<TestCaseButton>
+                                    Child = leftFlowContainer = new SearchContainer<TestCaseButtonGroup>
                                     {
                                         Padding = new MarginPadding(3),
                                         Direction = FillDirection.Vertical,
@@ -437,7 +443,8 @@ namespace osu.Framework.Testing
         private void updateButtons()
         {
             foreach (var b in leftFlowContainer.Children)
-                b.Current = b.TestType.Name == CurrentTest?.GetType().Name;
+                foreach (var c in b.Items)
+                c.Current = c.TestType.Name == CurrentTest?.GetType().Name;
         }
 
         private class ErrorCatchingDelayedLoadWrapper : DelayedLoadWrapper
