@@ -84,7 +84,10 @@ namespace osu.Framework.Testing.Drawables
                 }
             });
 
-            text.AddText(test.Name.Replace("TestCase", ""));
+            var testName = test.GetCustomAttribute<TestNameAttribute>()?.TestName
+                           ?? test.Name.Replace("TestCase", "");
+
+            text.AddText(testName);
 
             var description = test.GetCustomAttribute<DescriptionAttribute>()?.Description;
             if (description != null)
