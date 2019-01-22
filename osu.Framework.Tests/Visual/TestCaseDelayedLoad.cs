@@ -12,6 +12,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("DelayedLoad")]
     public class TestCaseDelayedLoad : TestCase
     {
         private const int panel_count = 2048;

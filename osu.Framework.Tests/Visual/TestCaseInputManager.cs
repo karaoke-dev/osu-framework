@@ -17,6 +17,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Input manager")]
     public class TestCaseInputManager : TestCase
     {
         public TestCaseInputManager()

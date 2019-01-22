@@ -10,6 +10,7 @@ using osu.Framework.Testing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Draw size preserving FillContainer")]
     public class TestCaseDrawSizePreservingFillContainer : TestCase
     {
         public TestCaseDrawSizePreservingFillContainer()

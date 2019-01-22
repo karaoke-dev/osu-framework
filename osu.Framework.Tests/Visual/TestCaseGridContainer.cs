@@ -11,6 +11,7 @@ using osu.Framework.Testing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("GridContainer")]
     public class TestCaseGridContainer : TestCase
     {
         private readonly GridContainer grid;

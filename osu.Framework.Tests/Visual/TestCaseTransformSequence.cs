@@ -12,6 +12,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Transform sequence")]
     public class TestCaseTransformSequence : GridTestCase
     {
         private readonly Container[] boxes;

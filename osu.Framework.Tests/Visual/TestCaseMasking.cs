@@ -13,6 +13,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Masking")]
     public class TestCaseMasking : TestCase
     {
         protected Container TestContainer;

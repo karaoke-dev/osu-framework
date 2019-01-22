@@ -14,6 +14,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Blending")]
     public class TestCaseBlending : TestCase
     {
         private readonly Dropdown<BlendingMode> colourModeDropdown;

@@ -11,6 +11,7 @@ using osuTK;
 namespace osu.Framework.Tests.Visual
 {
     [TestFixture]
+    [TestName("Fit inside flow")]
     public class TestCaseFitInsideFlow : TestCase
     {
         private const float container_width = 60;

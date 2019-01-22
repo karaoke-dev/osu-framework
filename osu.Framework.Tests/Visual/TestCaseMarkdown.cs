@@ -10,6 +10,7 @@ using osu.Framework.Testing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Markdown")]
     [Description("markdown reader")]
     public class TestCaseMarkdown : TestCase
     {

@@ -9,6 +9,7 @@ using osuTK;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Checkboxes")]
     public class TestCaseCheckboxes : TestCase
     {
         public TestCaseCheckboxes()

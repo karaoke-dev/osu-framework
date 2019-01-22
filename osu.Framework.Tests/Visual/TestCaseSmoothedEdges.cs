@@ -10,6 +10,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Smoothed edges")]
     public class TestCaseSmoothedEdges : GridTestCase
     {
         public TestCaseSmoothedEdges() : base(2, 2)

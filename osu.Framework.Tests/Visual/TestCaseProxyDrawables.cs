@@ -12,6 +12,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Proxy drawables")]
     public class TestCaseProxyDrawables : TestCase
     {
         public TestCaseProxyDrawables()

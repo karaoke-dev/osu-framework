@@ -20,6 +20,7 @@ using osu.Framework.MathUtils;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Mouse states")]
     public class TestCaseMouseStates : ManualInputManagerTestCase
     {
         private readonly Box marginBox, outerMarginBox;

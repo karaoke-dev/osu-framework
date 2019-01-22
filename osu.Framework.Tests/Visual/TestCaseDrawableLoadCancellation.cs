@@ -19,6 +19,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Drawable load cancellatio")]
     public class TestCaseDrawableLoadCancellation : TestCase
     {
         private readonly List<SlowLoader> loaders = new List<SlowLoader>();

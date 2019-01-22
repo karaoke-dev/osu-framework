@@ -13,6 +13,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Cached buffered container")]
     public class TestCaseCachedBufferedContainer : GridTestCase
     {
         public override IReadOnlyList<Type> RequiredTypes => new[]

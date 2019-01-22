@@ -9,6 +9,7 @@ using osuTK;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Draw Visualiser")]
     public class TestCaseDrawVisualiser : TestCase
     {
         [BackgroundDependencyLoader]

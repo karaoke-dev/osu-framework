@@ -12,6 +12,7 @@ using osu.Framework.Graphics.Containers;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("VideoSprite")]
     public class TestCaseVideoSprite : TestCase
     {
         private ManualClock clock;

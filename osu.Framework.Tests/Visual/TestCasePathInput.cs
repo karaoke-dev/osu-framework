@@ -14,6 +14,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Path input")]
     public class TestCasePathInput : TestCase
     {
         private const float path_width = 50;

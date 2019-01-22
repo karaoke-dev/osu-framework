@@ -17,6 +17,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Screen")]
     public class TestCaseScreen : TestCase
     {
         private Screen baseScreen;

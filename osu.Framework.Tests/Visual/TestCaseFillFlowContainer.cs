@@ -17,6 +17,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("FillFlowContainer")]
     public class TestCaseFillFlowContainer : TestCase
     {
         private FillDirectionDropdown selectionDropdown;

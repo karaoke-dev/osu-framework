@@ -9,6 +9,7 @@ using osuTK;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Property boundaries")]
     [System.ComponentModel.Description("ensure validity of drawables when receiving certain values")]
     public class TestCasePropertyBoundaries : TestCase
     {

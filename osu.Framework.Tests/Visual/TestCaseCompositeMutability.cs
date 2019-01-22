@@ -12,6 +12,7 @@ using osu.Framework.Testing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Composite mutability")]
     public class TestCaseCompositeMutability : TestCase
     {
         [TestCase(TestThread.External, false)]

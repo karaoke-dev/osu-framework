@@ -15,6 +15,7 @@ using SixLabors.ImageSharp.PixelFormats;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Drawable path")]
     public class TestCaseDrawablePath : GridTestCase
     {
         public TestCaseDrawablePath()

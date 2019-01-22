@@ -12,6 +12,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("ContextMenu")]
     public class TestCaseContextMenu : TestCase
     {
         private const int start_time = 0;

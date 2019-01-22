@@ -13,6 +13,7 @@ using System.Threading;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Model backed drawable")]
     public class TestCaseModelBackedDrawable : TestCase
     {
         public TestCaseModelBackedDrawable()

@@ -17,6 +17,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Borderless")]
     public class TestCaseBorderless : TestCase
     {
         private readonly SpriteText currentActualSize = new SpriteText();

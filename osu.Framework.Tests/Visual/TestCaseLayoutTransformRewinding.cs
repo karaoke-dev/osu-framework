@@ -11,6 +11,7 @@ using osuTK;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Layout transform rewinding")]
     [System.ComponentModel.Description("Rewinding of transforms that are important to layout.")]
     public class TestCaseLayoutTransformRewinding : TestCase
     {

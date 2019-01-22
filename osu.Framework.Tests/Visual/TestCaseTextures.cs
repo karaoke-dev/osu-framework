@@ -12,6 +12,7 @@ using osu.Framework.Testing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Textures")]
     public class TestCaseTextures : TestCase
     {
         [Cached]

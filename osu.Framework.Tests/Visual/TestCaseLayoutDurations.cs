@@ -14,6 +14,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Layout durations")]
     public class TestCaseLayoutDurations : TestCase
     {
         private ManualClock manualClock;

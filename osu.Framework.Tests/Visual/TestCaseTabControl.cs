@@ -15,6 +15,7 @@ using osuTK;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("TabControl")]
     public class TestCaseTabControl : TestCase
     {
         public TestCaseTabControl()

@@ -12,6 +12,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("TextFlow")]
     [System.ComponentModel.Description("word-wrap and paragraphs")]
     public class TestCaseTextFlow : TestCase
     {

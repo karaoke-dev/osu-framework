@@ -11,6 +11,7 @@ using osu.Framework.Testing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Fullscreen")]
     public class TestCaseFullscreen : TestCase
     {
         private readonly SpriteText currentActualSize = new SpriteText();

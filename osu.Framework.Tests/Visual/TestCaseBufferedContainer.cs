@@ -3,10 +3,12 @@
 
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
+using osu.Framework.Testing;
 using osuTK;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("BufferedContainer")]
     public class TestCaseBufferedContainer : TestCaseMasking
     {
         private readonly BufferedContainer buffer;

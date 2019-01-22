@@ -17,6 +17,7 @@ using osuTK.Input;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Focus")]
     public class TestCaseFocus : ManualInputManagerTestCase
     {
         private FocusOverlay overlay;

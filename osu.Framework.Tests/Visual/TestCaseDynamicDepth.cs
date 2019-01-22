@@ -11,6 +11,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Dynamic depth")]
     [System.ComponentModel.Description("changing depth of child dynamically")]
     public class TestCaseDynamicDepth : TestCase
     {

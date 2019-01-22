@@ -16,6 +16,7 @@ using SixLabors.ImageSharp.PixelFormats;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Input resampler")]
     [System.ComponentModel.Description("live path optimiastion")]
     public class TestCaseInputResampler : GridTestCase
     {

@@ -14,6 +14,7 @@ using osuTK.Input;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Dropdown box")]
     public class TestCaseDropdownBox : ManualInputManagerTestCase
     {
         private const int items_to_add = 10;

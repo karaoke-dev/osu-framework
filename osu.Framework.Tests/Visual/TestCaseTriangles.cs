@@ -11,6 +11,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Triangles")]
     public class TestCaseTriangles : TestCase
     {
         private readonly Container testContainer;

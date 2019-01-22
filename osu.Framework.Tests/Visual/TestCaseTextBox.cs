@@ -9,6 +9,7 @@ using osuTK;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("TextBox")]
     public class TestCaseTextBox : TestCase
     {
         public TestCaseTextBox()

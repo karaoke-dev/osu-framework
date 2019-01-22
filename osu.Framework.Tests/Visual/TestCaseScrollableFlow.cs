@@ -12,6 +12,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Scrollable flow")]
     public class TestCaseScrollableFlow : TestCase
     {
         private readonly ScheduledDelegate boxCreator;

@@ -14,6 +14,7 @@ using SixLabors.ImageSharp.PixelFormats;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("CircularProgress")]
     public class TestCaseCircularProgress : TestCase
     {
         public override IReadOnlyList<Type> RequiredTypes => new[] { typeof(CircularProgress), typeof(CircularProgressDrawNode), typeof(CircularProgressDrawNodeSharedData) };

@@ -20,6 +20,7 @@ using osuTK.Input;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Key bindings")]
     public class TestCaseKeyBindings : ManualInputManagerTestCase
     {
         private readonly KeyBindingTester none, noneExact, noneModifiers, unique, all;

@@ -10,6 +10,7 @@ using osu.Framework.Testing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Container state")]
     [System.ComponentModel.Description("ensure valid container state in various scenarios")]
     public class TestCaseContainerState : TestCase
     {

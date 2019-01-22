@@ -11,6 +11,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Colour gradient")]
     public class TestCaseColourGradient : GridTestCase
     {
         public TestCaseColourGradient() : base(2, 2)

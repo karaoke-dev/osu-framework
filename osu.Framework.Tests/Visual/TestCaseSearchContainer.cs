@@ -12,6 +12,7 @@ using osuTK;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("SearchContainer")]
     public class TestCaseSearchContainer : TestCase
     {
         public TestCaseSearchContainer()

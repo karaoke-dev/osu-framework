@@ -14,6 +14,7 @@ using osuTK.Input;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Sliderbar")]
     public class TestCaseSliderbar : ManualInputManagerTestCase
     {
         public override IReadOnlyList<Type> RequiredTypes => new[] { typeof(BasicSliderBar<>), typeof(SliderBar<>) };

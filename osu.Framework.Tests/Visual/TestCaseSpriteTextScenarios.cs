@@ -19,6 +19,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("SpriteText scenarios")]
     [System.ComponentModel.Description("various visual SpriteText displays")]
     public class TestCaseSpriteTextScenarios : GridTestCase
     {

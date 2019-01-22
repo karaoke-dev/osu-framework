@@ -11,6 +11,7 @@ using osuTK;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("CircularContainer sizing")]
     public class TestCaseCircularContainerSizing : TestCase
     {
         [Test]

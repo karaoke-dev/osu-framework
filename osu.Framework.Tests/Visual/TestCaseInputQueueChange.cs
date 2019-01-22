@@ -15,6 +15,7 @@ using osuTK.Input;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Input queue change")]
     public class TestCaseInputQueueChange : ManualInputManagerTestCase
     {
         private readonly HittableBox box1;

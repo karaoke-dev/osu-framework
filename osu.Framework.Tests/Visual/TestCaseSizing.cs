@@ -15,6 +15,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Sizing")]
     [System.ComponentModel.Description("potentially challenging size calculations")]
     public class TestCaseSizing : TestCase
     {

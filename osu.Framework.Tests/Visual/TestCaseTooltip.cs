@@ -13,6 +13,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Tooltip")]
     public class TestCaseTooltip : TestCase
     {
         private readonly Container testContainer;

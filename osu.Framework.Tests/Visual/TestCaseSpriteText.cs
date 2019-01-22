@@ -8,6 +8,7 @@ using osu.Framework.Testing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("SpriteText")]
     public class TestCaseSpriteText : TestCase
     {
         public TestCaseSpriteText()

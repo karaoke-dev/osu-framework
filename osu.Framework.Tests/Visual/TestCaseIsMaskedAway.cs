@@ -10,6 +10,7 @@ using osuTK;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Is masked away")]
     public class TestCaseIsMaskedAway : TestCase
     {
         /// <summary>

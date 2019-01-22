@@ -10,6 +10,7 @@ using osu.Framework.Testing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("CircularContainer")]
     [System.ComponentModel.Description(@"Checking for bugged corner radius")]
     public class TestCaseCircularContainer : TestCase
     {

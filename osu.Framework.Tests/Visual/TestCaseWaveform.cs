@@ -14,11 +14,13 @@ using osu.Framework.Graphics.Shapes;
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Graphics.UserInterface;
 using osu.Framework.Input.Events;
+using osu.Framework.Testing;
 using osuTK;
 using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Waveform")]
     public class TestCaseWaveform : FrameworkTestCase
     {
         public override IReadOnlyList<Type> RequiredTypes => new[]

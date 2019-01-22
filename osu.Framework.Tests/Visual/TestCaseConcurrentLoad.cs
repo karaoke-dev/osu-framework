@@ -15,6 +15,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Concurrent load")]
     public class TestCaseConcurrentLoad : TestCase
     {
         private const int panel_count = 6;

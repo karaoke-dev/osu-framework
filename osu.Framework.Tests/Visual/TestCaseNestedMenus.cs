@@ -15,6 +15,7 @@ using osuTK.Input;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Nested menus")]
     public class TestCaseNestedMenus : ManualInputManagerTestCase
     {
         private const int max_depth = 5;

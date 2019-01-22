@@ -11,6 +11,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Nested hover")]
     public class TestCaseNestedHover : TestCase
     {
         public TestCaseNestedHover()

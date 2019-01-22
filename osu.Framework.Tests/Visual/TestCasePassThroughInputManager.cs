@@ -13,6 +13,7 @@ using osuTK.Input;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Pass through InputManager")]
     public class TestCasePassThroughInputManager : ManualInputManagerTestCase
     {
         public TestCasePassThroughInputManager()

@@ -12,6 +12,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Padding")]
     public class TestCasePadding : GridTestCase
     {
         public TestCasePadding() : base(2, 2)

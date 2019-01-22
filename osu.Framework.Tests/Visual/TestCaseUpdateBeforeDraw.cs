@@ -13,6 +13,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Update before draw")]
     [Description("Tests whether drawable updates occur before drawing.")]
     public class TestCaseUpdateBeforeDraw : TestCase
     {

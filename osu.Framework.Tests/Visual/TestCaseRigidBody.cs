@@ -13,6 +13,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("RigidBody")]
     public class TestCaseRigidBody : TestCase
     {
         private readonly TestRigidBodySimulation sim;

@@ -13,6 +13,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Joystick")]
     public class TestCaseJoystick : TestCase
     {
         public TestCaseJoystick()

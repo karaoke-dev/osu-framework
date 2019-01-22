@@ -12,6 +12,7 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Coordinate spaces")]
     public class TestCaseCoordinateSpaces : TestCase
     {
         public TestCaseCoordinateSpaces()

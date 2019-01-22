@@ -12,6 +12,7 @@ using osu.Framework.Testing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Counting text")]
     public class TestCaseCountingText : TestCase
     {
         private readonly Bindable<CountType> countType = new Bindable<CountType>();

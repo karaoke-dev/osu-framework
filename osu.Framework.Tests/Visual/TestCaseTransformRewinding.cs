@@ -19,6 +19,7 @@ using osu.Framework.Timing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Transform rewinding")]
     public class TestCaseTransformRewinding : TestCase
     {
         private const double interval = 250;

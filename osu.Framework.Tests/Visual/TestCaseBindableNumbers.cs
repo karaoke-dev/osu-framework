@@ -11,6 +11,7 @@ using osu.Framework.Testing;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestName("Bindable numbers")]
     public class TestCaseBindableNumbers : TestCase
     {
         private readonly BindableInt bindableInt = new BindableInt();
