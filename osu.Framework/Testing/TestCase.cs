@@ -124,11 +124,21 @@ namespace osu.Framework.Testing
 
         protected TestCase()
         {
-            Name = GetType().ReadableName();
+            var testNameAttribute = GetType().GetCustomAttributes(typeof(TestNameAttribute),true)
+                .FirstOrDefault() as TestNameAttribute;
 
-            // Skip the "TestCase" prefix
-            if (Name.StartsWith(prefix)) Name = Name.Replace(prefix, string.Empty);
+            if(testNameAttribute!=null)
+            {
+                Name = testNameAttribute.DisplayName;
+            }
+            else
+            {
+                Name = GetType().ReadableName();
 
+                // Skip the "TestCase" prefix
+                if (Name.StartsWith(prefix)) Name = Name.Replace(prefix, string.Empty);
+            }
+            
             RelativeSizeAxes = Axes.Both;
             Masking = true;
 
