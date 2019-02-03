@@ -4,13 +4,8 @@ using System.Text;
 
 namespace osu.Framework.Testing
 {
-    public class TestGroup
+    public struct TestGroup
     {
-        public TestGroup()
-        {
-
-        }
-
         public TestGroup(string groupName, string groupDescription)
         {
             GroupName = groupName;
