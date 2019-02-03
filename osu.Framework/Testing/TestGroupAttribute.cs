@@ -5,11 +5,11 @@ namespace osu.Framework.Testing
     [AttributeUsage(AttributeTargets.Class)]
     public class TestGroupAttribute : Attribute
     {
-        public TestGroupAttribute(TestGroup testGroup)
+        public TestGroupAttribute(Type testGroupType)
         {
-            TestGroup = testGroup;
+            TestGroup = (ITestGroup)Activator.CreateInstance(testGroupType);
         }
 
-        public TestGroup TestGroup { get; set; }
+        public ITestGroup TestGroup { get; set; }
     }
 }

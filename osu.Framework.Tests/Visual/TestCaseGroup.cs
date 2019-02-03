@@ -2,24 +2,48 @@
 
 namespace osu.Framework.Tests.Visual
 {
-    public static class TestCaseGroup
+    public class TestCaseGroup
     {
-        public static TestGroup UI
-            => new TestGroup("UI","textbox, checkbox, label ,etc ...");
+        public class TestGroupUI : ITestGroup
+        {
+            public string GroupName => "UI";
 
-        public static TestGroup Input
-            => new TestGroup("Input","mouse, keyboard, joystick, etc ...");
+            public string GroupDescription => "textbox, checkbox, label ,etc ...";
+        }
 
-        public static TestGroup Effect
-            => new TestGroup("Effect","");
+        public class TestGroupInput : ITestGroup
+        {
+            public string GroupName => "Input";
 
-        public static TestGroup Graphic
-            => new TestGroup("Graphic","");
+            public string GroupDescription => "mouse, keyboard, joystick, etc ...";
+        }
 
-        public static TestGroup Drawable
-            => new TestGroup("Drawable","Every kinds of drawable");
+        public class TestGroupEffect : ITestGroup
+        {
+            public string GroupName => "Effect";
 
-        public static TestGroup Utilities
-            => new TestGroup("Utilities","rigid body, markdown container, etc ...");
+            public string GroupDescription => "textbox, checkbox, label ,etc ...";
+        }
+
+        public class TestGroupGraphic : ITestGroup
+        {
+            public string GroupName => "Graphic";
+
+            public string GroupDescription => "textbox, checkbox, label ,etc ...";
+        }
+
+        public class TestGroupDrawable : ITestGroup
+        {
+            public string GroupName => "Drawable";
+
+            public string GroupDescription => "Every kinds of drawable";
+        }
+
+        public class TestGroupUtilities : ITestGroup
+        {
+            public string GroupName => "Utilities";
+
+            public string GroupDescription => "rigid body, markdown container, etc ...";
+        }
     }
 }
