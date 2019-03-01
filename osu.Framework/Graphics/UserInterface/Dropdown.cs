@@ -231,6 +231,14 @@ namespace osu.Framework.Graphics.UserInterface
         /// </summary>
         protected virtual DropdownMenu CreateMenu() => new DropdownMenu();
 
+        protected virtual DropdownMenuItem<T> GetDropdownMenuItemItem(T value)
+        {
+            if (itemMap.TryGetValue(value, out DropdownMenuItem<T> item))
+                return item;
+
+            return null;
+        }
+
         #region DropdownMenu
 
         public class DropdownMenu : Menu

@@ -13,6 +13,8 @@ using osuTK.Graphics;
 
 namespace osu.Framework.Tests.Visual
 {
+    [TestGroup("Visual")]
+    [TestName("Test Animation")]
     [System.ComponentModel.Description("frame-based animations")]
     public class TestCaseAnimation : TestCase
     {

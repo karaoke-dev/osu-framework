@@ -77,12 +77,13 @@ namespace osu.Framework.Testing
         {
             leftFlowContainer.Clear();
 
-            var testGroup = TestTypes.Where(t => t.Assembly == asm).GroupBy(x => x.GetCustomAttribute<TestGroupAttribute>()?.GroupName ?? "Non-Group Test Case").ToList();
+            var testGroup = TestTypes.Where(t => t.Assembly == asm).GroupBy(x => x.GetCustomAttribute<TestGroupAttribute>()?.GroupName ?? "Non-Group Test Case")
+                                     .OrderBy(x=>x.Key).ToList();
 
             //Add buttons for each TestCase.
-            leftFlowContainer.AddRange(testGroup.Select(g => new TestCaseButtonGroup(g.Key)
+            leftFlowContainer.AddRange(testGroup.Select(g => new TestCaseButtonGroup(g.Key,g.ToList())
             {
-                Children = g.Select(t => new TestCaseButton(t) { Action = () => LoadTest(t) }).ToList()
+                //Children = g.Select(t => new TestCaseButton(t) { Action = () => LoadTest(t) }).ToList()
             }));
         }
 
@@ -442,9 +443,9 @@ namespace osu.Framework.Testing
 
         private void updateButtons()
         {
-            foreach (var b in leftFlowContainer.Children)
-                foreach (var c in b.Items)
-                c.Current = c.TestType.Name == CurrentTest?.GetType().Name;
+            //foreach (var b in leftFlowContainer.Children)
+            //    foreach (var c in b.Items)
+            //    c.Current = c.TestType.Name == CurrentTest?.GetType().Name;
         }
 
         private class ErrorCatchingDelayedLoadWrapper : DelayedLoadWrapper
